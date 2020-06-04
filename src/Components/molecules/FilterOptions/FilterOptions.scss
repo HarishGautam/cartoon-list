@@ -1,0 +1,20 @@
+@import '../../../shared/styles/base/src/index.scss';
+
+.filter-section {
+  @include tablet {
+    max-width: 200px;
+  }
+  border: 1px solid $black;
+  text-align: left;
+  padding: 16px;
+  margin-bottom: 32px;
+  .input-conatiner {
+    display: inline-block;
+  }
+  .filter-row {
+    padding-top: 16px;
+  }
+  .filter-grp-heading {
+    margin: 0;
+  }
+}

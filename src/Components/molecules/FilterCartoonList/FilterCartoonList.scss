@@ -1,0 +1,33 @@
+@import '../../../shared/styles/base/src/index.scss';
+
+.filter-wrapper {
+  @include mobile {
+    height: 80px;
+    overflow: hidden;
+    transition: width 2s;
+
+    &.expand-filter {
+      height: auto;
+    }
+  }
+  .filter-heading {
+    @include mobile {
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+    @include tablet {
+      pointer-events: none;
+    }
+    text-align: left;
+    margin-bottom: 40px;
+    font-size: 40px;
+    text-transform: uppercase;
+  }
+  .fa {
+    display: none;
+    @include mobile {
+      display: block;
+    }
+  }
+}

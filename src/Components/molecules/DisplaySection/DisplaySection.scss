@@ -1,0 +1,20 @@
+@import '../../../shared/styles/base/src/index.scss';
+
+.display-list-wrapper {
+  .search-sort-container {
+    @include mobile {
+      flex-direction: column;
+      align-items: baseline;
+    }
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    padding-bottom: 16px;
+  }
+  .selected-filters-heading {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 40px;
+    text-transform: uppercase;
+  }
+}

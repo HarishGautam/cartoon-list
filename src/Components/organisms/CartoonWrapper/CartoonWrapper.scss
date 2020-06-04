@@ -1,0 +1,29 @@
+@import '../../../shared/styles/base/src/index.scss';
+
+.cartoon-app-wrapper {
+  display: flex;
+  @include mobile {
+    flex-direction: column;
+    padding: 32px 15px;
+  }
+  @include tablet {
+    padding: 20px;
+  }
+  @include desktop {
+    padding: 40px;
+  }
+  .display-list-wrapper {
+    flex-basis: 75%;
+    @include tablet {
+      padding-left: 20px;
+    }
+  }
+  .filter-wrapper {
+    @include mobile {
+      width: 100%;
+    }
+    @include tablet {
+      flex-basis: 25%;
+    }
+  }
+}

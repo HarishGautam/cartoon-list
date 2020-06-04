@@ -1,0 +1,58 @@
+@import '../../../shared/styles/base/src/index.scss';
+
+.cartoon-list-items {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: grey;
+  .cartoon-list-item {
+    @include mobile {
+      flex-basis: 50%;
+    }
+    flex-basis: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .img-container {
+    position: relative;
+    img {
+      width: 100%;
+    }
+  }
+  .img-title {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: pink;
+    width: 100%;
+  }
+  .carton-info {
+    background-color: #353a38;
+    padding: 16px;
+    .info-row {
+      padding: 10px 0;
+      flex-wrap: wrap;
+      border-bottom: 1px solid lightcyan;
+      display: flex;
+      justify-content: space-between;
+    }
+    .label {
+      color: darkgray;
+    }
+    .value-txt {
+      @include mobile {
+        width: 35px;
+      }
+      @include tablet {
+        width: 40px;
+      }
+      @include desktop {
+        width: 110px;
+      }
+      color: darkgoldenrod;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      text-align: right;
+    }
+  }
+}
